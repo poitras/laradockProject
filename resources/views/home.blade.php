@@ -6,9 +6,18 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
-
                 <div class="panel-body">
-                    You are logged in!
+                    <p>
+                        You are logged in!
+
+                    </p>
+                    <p>
+                        {{ Auth::user()->profile->city }}
+                    </p>
+                    <p>
+                        {{ Auth::user()->profile->about }}
+
+                    </p>
                 </div>
             </div>
         </div>
